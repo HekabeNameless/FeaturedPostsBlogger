@@ -1,0 +1,10 @@
+  <div id="totalsliderwrapup">
+    <div id='sliderwrap'>
+      <div class="slider-nav" id='left'><i class='fa fa-angle-double-left' aria-hidden='true'></i>
+      </div>
+      <div id="sliderinner"></div>
+      <div class="slider-nav" id='right'><i class='fa fa-angle-double-right' aria-hidden='true'></i>
+      </div>
+    </div>
+    <div id='currentcount'></div>
+  </div>
