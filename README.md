@@ -8,7 +8,8 @@ To install copy the jQuery (you can get it e.g. <a href="https://developers.goog
 e.g. like this:<br />
   &lt;script&gt;<br />
     var noimg = "http://yoursite.com/someimg.jpg"; // An URL to the image that should be shown if a post has no own image<br />
-    var MaximumPosts = 5; // The count of posts that should be shown.*<br />
+    var MaximumPosts = 5; // The count of posts that should be shown.<br />
+    // Be careful to use a number for MaximumPosts that isn't larger than the total number of posts you labelled with you special Label. In my example, there must be at least 5 posts with the Label "Feature" otherwise this won't work.
     var imgresolution = 1000; // The resolution in which your images should be shown<br />
     var Blog = "www.geekgefluester.de"; // Your Blog-URL<br />
     var Label = "Feature"; // The Label with which you mark the posts for your slider<br />
@@ -20,4 +21,3 @@ e.g. like this:<br />
 Insert the CSS before "]]&gt;&lt;/b:skin&gt;" into your Template and you're done. <br />
 <em>Notice:</em> The CSS isn't fully responsive yet which means you'll probably have to make some changes if you want to use this for mobile devices as well.<br />
 <br />
-* Be careful to use a number that isn't larger than the total number of posts you labelled with you special Label. In my example, there must be at least 5 posts with the Label "Feature" otherwise this won't work.
