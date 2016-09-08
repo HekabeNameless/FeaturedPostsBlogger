@@ -1,6 +1,6 @@
 #Featured Posts Slider for Google Blogger
 
-This code is only working with jQuery (tested with 2.2.2 and above) and optionally also with Font Awesome if you want to use the same arrows for the slider as I used.<br />
+This code is only working with jQuery (tested with 2.2.2 and above) and optionally also with <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> if you want to use the same arrows for the slider as I used.<br />
 
 To install copy the jQuery and Font Awesome implementation code above the &lt;/head&gt;-Tag of your template, then insert the basic HTML I provide in the HTML-file here at the point of your tempalte where you want to use it and call the "LoadFeaturedPosts"-Function below.<br />
 
