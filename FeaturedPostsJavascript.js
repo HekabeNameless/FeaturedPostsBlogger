@@ -1,6 +1,6 @@
     // 1) Function for loading posts that are marked as featured
     function LoadFeaturedPosts(maxposts, noimage, resolution, blogurl, featurelabel) {
-      var FeatureFeed = "http://" + blogurl + "/feeds/posts/summary/-/" + featurelabel + "?published&alt=json-in-script";
+      var FeatureFeed = "http://" + blogurl + "/feeds/posts/summary/-/" + featurelabel + "?published&amp;alt=json-in-script";
 
       $.ajax({
         url: FeatureFeed,
@@ -10,9 +10,9 @@
           console.log("Accessed feature feeed.");
           var h = /\/s\d{2,4}/;
           var Markup = "<div id='slidewrapup'>";
-          for (var p = 0; p < maxposts; p++) {
+          for (var p = 0; p &lt; maxposts; p++) {
             var PostUrl;
-            for (var t = 0; t < data.feed.entry[p].link.length; t++) {
+            for (var t = 0; t &lt; data.feed.entry[p].link.length; t++) {
               PostUrl = data.feed.entry[p].link[t].href;
             }
             var PostTitle = data.feed.entry[p].title.$t;
@@ -37,7 +37,7 @@
     function FeatureSlider(slidecount) {
 
       var bubbles = "<bubbles>";
-      for (var b = 0; b < slidecount; b++) {
+      for (var b = 0; b &lt; slidecount; b++) {
         bubbles += "<div id='singlebubble'></div>";
       }
       bubbles += "</bubbles>";
@@ -57,7 +57,7 @@
       $("#sliderinner .slide img").css('width', slidewidth);
 
       $('#right').click(function() {
-        if (rightclickcount < slidecount - 1) {
+        if (rightclickcount &lt; slidecount - 1) {
           $('#sliderinner').animate({
             left: '-=' + sliderWidth
           }, 500);
@@ -66,14 +66,14 @@
           rightclickcount += 1;
           var realcountafter = rightclickcount + 1;
           $("#currentcount bubbles #singlebubble:nth-child(" + realcountafter + ")").addClass("bubble-active");
-          if (leftclickcount > 0) {
+          if (leftclickcount &gt; 0) {
             leftclickcount -= 1;
           }
         }
       });
 
       $('#left').click(function() {
-        if (rightclickcount > 0) {
+        if (rightclickcount &gt; 0) {
           $('#sliderinner').animate({
             left: '+=' + sliderWidth
           }, 500);
