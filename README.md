@@ -2,7 +2,7 @@
 
 This code is only working with jQuery (tested with 2.2.2 and above) and optionally also with <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> if you want to use the same arrows for the slider as I used.<br />
 
-To install copy the jQuery and Font Awesome implementation code above the &lt;/head&gt;-Tag of your template, then insert the basic HTML I provide in the HTML-file here inside the &lt;body&gt; at the point of your template where you want to use it and call the "LoadFeaturedPosts"-Function below.<br />
+To install copy the jQuery and Font Awesome implementation code above the &lt;/head&gt;-Tag of your template, then insert somewhere below &lt;body&gt; but before &lt;/body&gt; the Code from my Javascript-file inside &lt;script&gt; and &lt;/script&gt;. After that copy the basic HTML I provide in the HTML-file here at the point of your template where you want to use the slider and call the "LoadFeaturedPosts"-Function below.<br />
 
 e.g. like this:<br />
   &lt;script&gt;<br />
