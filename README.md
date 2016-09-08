@@ -1,5 +1,4 @@
-# FeaturedPostsBlogger
-Featured Posts Slider for Google Blogger
+#Featured Posts Slider for Google Blogger
 
 This code is only working with jQuery (tested with 2.2.2 and above) and optionally also with Font Awesome if you want to use the same arrows for the slider as I used.<br />
 
